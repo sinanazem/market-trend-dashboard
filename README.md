@@ -1,1 +1,1 @@
-# Market trend dashboard
+# Market Trend Dashboard
