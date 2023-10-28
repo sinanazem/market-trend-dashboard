@@ -14,13 +14,6 @@ def create_folder_if_not_exists(path):
     Path(path).absolute().mkdir(parents=True, exist_ok=True)
 
 
-# def create_folder_if_not_exists(path):
-#     """
-#     Create a new folder if it doesn't exists
-#     """
-#     os.makedirs(os.path.dirname(path), exist_ok=True)
-
-
 def extract():
     tickers = read_json('./src/static/available_tickers.json')
     list_ = []
