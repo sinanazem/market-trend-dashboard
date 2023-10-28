@@ -73,7 +73,5 @@ def store_data_in_postgresql(data_list):
             connection.close()
 
 def main():
-    #db_params = load_yaml_file('./src/config/db_config.yaml')
-
     data_list = pd.read_csv("./src/data/fool_earnings.csv").to_dict(orient='index').values()
     store_data_in_postgresql(data_list)
