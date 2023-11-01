@@ -71,7 +71,3 @@ def store_data_in_postgresql(data_list):
         if connection:
             cursor.close()
             connection.close()
-
-def main():
-    data_list = pd.read_csv("./src/data/fool_earnings.csv").to_dict(orient='index').values()
-    store_data_in_postgresql(data_list)
