@@ -17,7 +17,7 @@ def create_folder_if_not_exists(path):
 def extract():
     tickers = read_json('./src/static/available_tickers.json')
     list_ = []
-    for ticker in tqdm(tickers['tickers'][:1]):
+    for ticker in tqdm(tickers['tickers'][:10]):
         fool_obj = FoolStockNewsCrawler(ticker)
         list_of_dict = fool_obj.get_transcripts_details()
         list_.extend(list_of_dict)
