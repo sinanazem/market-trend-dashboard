@@ -86,9 +86,13 @@ options = st.multiselect(
     ["WordCloud", "NER", "Most Common Words", "Topic Modeling"],
     ["NER", "WordCloud"])
 
-import streamlit as st
 st.markdown(" ")
 if st.button('Generate'):
     pass
 else:
     pass
+st.write(options)
+
+if "WordCloud" in options:
+    pass
+    
