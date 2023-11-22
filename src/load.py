@@ -7,6 +7,8 @@ import pandas as pd
 from extract import extract
 import os
 import time
+
+
 def store_data_in_postgresql(data_list):
     connection = None  # Initialize connection to None
     time.sleep(5)
