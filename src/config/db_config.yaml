@@ -1,7 +1,7 @@
 
 # ------------------------- Data Warehouses --------------
 
-# host: localhost
-# password: postgres
-# user: postgres
-# dbname: postgres
+host: localhost
+password: postgres
+user: postgres
+dbname: postgres

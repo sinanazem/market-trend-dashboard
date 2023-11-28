@@ -14,7 +14,7 @@ def create_folder_if_not_exists(path):
     Path(path).absolute().mkdir(parents=True, exist_ok=True)
 
 
-def extract():
+def extract_data():
     tickers = read_json('./src/static/available_tickers.json')
     list_ = []
     for ticker in tqdm(tickers['tickers'][:1]):
@@ -25,9 +25,9 @@ def extract():
 
 
 
-def main():
+# def main():
 
-    create_folder_if_not_exists('./src/data/')
-    df = pd.DataFrame(extract())
-    df.to_csv('./src/data/fool_earnings.csv', index=False)
-    logger.info('stored successfully in  "src/data/fool_earnings.csv"')
+    # create_folder_if_not_exists('./src/data/')
+    # df = pd.DataFrame(extract())
+    # df.to_csv('./src/data/fool_earnings.csv', index=False)
+    # logger.info('stored successfully in  "src/data/fool_earnings.csv"')
