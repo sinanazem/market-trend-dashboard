@@ -5,7 +5,7 @@ import datetime
 import json
 import pandas as pd
 st.header("NLP Finance News Dashboard")
-from wordcloud_smt import wordcloud_generator
+#from wordcloud_smt import wordcloud_generator
 
 # Get the current date and time
 now = datetime.datetime.now()
@@ -94,11 +94,11 @@ else:
     pass
 st.write(options)
 
-if "WordCloud" in options:
-    import pandas as pd
-    from sqlalchemy import create_engine
-    engine = create_engine("postgresql://myuser:mypassword@localhost:5432/mydatabase")
-    df = pd.read_sql("SELECT * FROM transcripts", con = engine)
-    content = " ".join(df['content'].to_list())
+# if "WordCloud" in options:
+#     import pandas as pd
+#     from sqlalchemy import create_engine
+#     engine = create_engine("postgresql://myuser:mypassword@localhost:5432/mydatabase")
+#     df = pd.read_sql("SELECT * FROM transcripts", con = engine)
+#     content = " ".join(df['content'].to_list())
 
-    wordcloud_generator.wc_generator(content)
+#     wordcloud_generator.wc_generator(content)
