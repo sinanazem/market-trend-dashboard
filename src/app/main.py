@@ -94,11 +94,3 @@ else:
     pass
 st.write(options)
 
-# if "WordCloud" in options:
-#     import pandas as pd
-#     from sqlalchemy import create_engine
-#     engine = create_engine("postgresql://myuser:mypassword@localhost:5432/mydatabase")
-#     df = pd.read_sql("SELECT * FROM transcripts", con = engine)
-#     content = " ".join(df['content'].to_list())
-
-#     wordcloud_generator.wc_generator(content)
