@@ -11,14 +11,3 @@ Before you begin, ensure you have met the following requirements:
 
 - Docker: You need Docker installed on your system to containerize the application.
 - Docker Compose: Make sure you have Docker Compose installed to manage multi-container applications.
-
-## Getting Started
-
-### Configuration
-
-1. Clone this repository to your local machine.
-
-   ```bash
-   git clone https://github.com/sinanazem/market-trend-dashboard.git
-   
-
