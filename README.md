@@ -5,9 +5,3 @@
 
 This project is a Dockerized web crawler that fetches financial news articles from the Motley Fool website and stores them in a PostgreSQL database. It's a simple and efficient way to gather financial news data for further analysis.
 
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- Docker: You need Docker installed on your system to containerize the application.
-- Docker Compose: Make sure you have Docker Compose installed to manage multi-container applications.
