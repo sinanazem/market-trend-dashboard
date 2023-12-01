@@ -1,5 +1,4 @@
 from wordcloud import WordCloud
-import matplotlib.pyplot as plt
 
 
 def wc_generator(content):
