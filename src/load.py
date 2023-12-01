@@ -9,14 +9,10 @@ import time
 from src.utils import make_db_connection_psycopg2
 
 def store_data_in_postgresql(data_list, db_name):
-    connection = None  # Initialize connection to None
+    connection = None 
     time.sleep(5)
-
     try:
-        # Connect to the PostgreSQL database
         conn, cursor = make_db_connection_psycopg2(db_name)
-
-        # Insert data into the table
         insert_query = """
         INSERT INTO motley_fool_news (ticker, title, date, time, crawled_date, link, content)
         VALUES (%s, %s, %s, %s, %s, %s, %s)
